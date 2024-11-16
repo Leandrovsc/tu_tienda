@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--primary-color: #c59a3e;
+	--background-color: #eee9e4;
+	--dark-color: #151515;
+    --logo-span:#df3d4d;
+    --background-color2: #575b83;
+}
+html {
+	font-size: 62.5%;
+	font-family: "Poppins"; /*"Audiowide",*/
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/***************************--HEADER--***********************/
+/***************************--PARTE SUPERIOR--***********************/
+.upper-section {
+    height: 12rem;
+	max-width: 100%;
+	margin: 0 auto;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    font-family: "Audiowide","Impact", "Haettenschweiler";
+}
+.upper-logo{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0 2rem;
+    padding: 0.75rem;
+}
+.bx-text{
+    font-size: 2rem;
+    color:var(--primary-color);
+}
+.logo{
+    font-size: 3rem;
+}
+
+.logo-h1{
+	text-align: center;
+	font-size: 3rem;
+    margin: 0 1.5rem;
+    letter-spacing: 0.1rem;
+} 
+.upper-user{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    padding: 1rem;
+}
+.bx-user-pin{
+    font-size: 5rem ;
+}
+.upper-user .login-link{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+.upper-user .login-link:hover{
+    color: var(--primary-color);
+}
+/***************************--PARTE-INFERIOR--***********************/
+.lower-section{
+    background: linear-gradient(to left,  #979cc7 10%,#ccc9c9 80%, #8186b3 30%,#252525);
+    font-style: italic;
+    box-sizing: content-box;
+}
+nav{
+    height: 6vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.bx-menu{  
+    font-size: 3rem;
+    margin: 1.5rem;
+    color: var(--primary-color);
+}
+nav .bx-menu{
+    display: none;
+}
+.menu-nav-list{
+    margin: 1rem 2.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--dark-color);
+    gap:0.8rem;
+}
+.menu-nav-list:hover{
+    border-radius: 1rem;
+    border-bottom: 3px solid var(--primary-color);
+    color: var(--background-color);
+    transition: all 0.3s ease;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------FOOTER--------------*/
+footer{
+    background-color:var(--background-color2);
+    border-top:0.25rem var(--dark-color) solid;
+    height: fit-content;
+}
+.footer-div{
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    height: 20rem;
+    margin-top: 2rem;
+    /* margin-bottom: 4rem; */
+    padding: 0.75rem 1rem;
+}
+.pyment-method{
+    width: 4rem;
+    margin: 0 1rem;
+    align-items: center;  
+}
+.title-footer{
+    font-size: 1.7rem;
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.contact-info  li , .description-content{
+    font-size: 1.3rem;
+    color: var(--background-color);
+    list-style: none;
+    font-style: oblique;
+}
+.maker{
+    font-size: 1.5rem;
+    font-family: "Audiowide","Impact";
+    margin: 1.2rem;
+    padding: 0.75rem;
+}
+.social{
+    font-size: 2.5rem;
+    margin: 1.5rem;
+}
+/*--------------------------------------*/
+.footer-payment{
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    text-align: center;
+}
+/*--------------------------------------*/
+.content{
+    align-items: center;
+}
+input{
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    font-family: "Poppins",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode' ;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+.content button {
+    border: none;
+    margin: 1rem;
+	color: #fff;
+	background-color: var(--primary-color);
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	border-radius: 3rem;
+    font-size: 1.25rem;
+    opacity: 0.7;
+    outline-offset: none;
+    
+}
+.content button:hover {
+    opacity: 1;
+    /*transiciones*/
+    transition: opacity  0.35s ease-in-out; 
+	background-color: var(--primary-color);
+	display: inline-block;
+}
+/*--------------------------------------*/
+.payments{
+    margin:1rem;
+    padding: 0.75rem;
+}
