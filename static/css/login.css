@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 75vh;
-    background-image:url(/static/img/sky.jpg) ;
+    background-image:url(../img/sky.jpg);
     background-size: cover;
     
 }
