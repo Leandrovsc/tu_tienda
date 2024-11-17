@@ -75,12 +75,12 @@ html {
     box-sizing: content-box;
 }
 nav{
-    height: 6vh;
+    /* height: 7.5vh; */
+    min-height: 9vh;
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
-
 .bx-menu{  
     font-size: 3rem;
     margin: 1.5rem;
@@ -112,7 +112,6 @@ nav .bx-menu{
 }
 /***************************--MAIN--***********************/
 /***************************--PARTE-PRINCIPAL--***********************/
-
 .main-section {
 	background-image: linear-gradient(100deg, #000000, #00000020),
 		url('../img/picture-home.jpg');
@@ -121,7 +120,6 @@ nav .bx-menu{
 	background-position: center;
     box-sizing: border-box;
 }
-
 .main-content  p{
     font-family:Helvetica, sans-serif;
     font-style: oblique;
