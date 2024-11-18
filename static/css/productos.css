@@ -76,7 +76,7 @@ html {
     box-sizing: content-box;
 }
 nav{
-    height: 6vh;
+    height: 6.5vh;
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -121,30 +121,24 @@ main{
 }
 .cards-conteiner{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(25rem,1fr));
-    gap:1rem;
+    grid-template-columns: repeat(auto-fill,minmax(23rem,1fr));
     background-color: #3ddf53;
 }
 .card-product{
     margin: 1rem;
     background-color: #c59a3e;
     border-radius: 3rem;
-	cursor: pointer;
-	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+	cursor:pointer;
 }
 .picture{
     height: 30rem;
     width: 100%;
     object-fit: cover; 
-    background-color: #707070;
+    object-position: center;
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
-    
 }
-figure{
-    outline: none;
-    border-radius: 10rem;
-}
+
 
 
 
