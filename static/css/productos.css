@@ -117,27 +117,33 @@ main{
     grid-template-columns: 70% 30%;
     gap:1rem;
     background-color: #df3d4d;
-
+    outline: none;
 }
 .cards-conteiner{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
-    grid-template-rows: repeat(auto-fill,minmax(70rem,));
+    grid-template-columns: repeat(auto-fill,minmax(25rem,1fr));
     gap:1rem;
     background-color: #3ddf53;
 }
 .card-product{
-    margin:1rem;
-    padding: 1rem 0;
+    margin: 1rem;
     background-color: #c59a3e;
-    border-radius: 0.5rem;
+    border-radius: 3rem;
 	cursor: pointer;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 .picture{
+    height: 30rem;
     width: 100%;
+    object-fit: cover; 
     background-color: #707070;
-    /* position: ; */
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    
+}
+figure{
+    outline: none;
+    border-radius: 10rem;
 }
 
 
@@ -160,7 +166,7 @@ footer{
     display: flex;
     align-items: top;
     justify-content: space-around;
-    height: 15rem;
+    height: 20rem;
     margin-top: 2rem;
     /* margin-bottom: 4rem; */
     padding: 0.75rem 1rem;
