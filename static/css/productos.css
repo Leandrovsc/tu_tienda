@@ -116,7 +116,7 @@ main{
     display: grid;
     grid-template-columns: 70% 30%;
     gap:1rem;
-    background-color: #df3d4d;
+    background-color: #353535;
     outline: none;
 }
 .cards-conteiner{
