@@ -138,9 +138,43 @@ main{
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
 }
+.card-discount{
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 1rem;
+    position: relative;
+    top:-28rem;
+    margin-left: 1rem;
+    padding:0.25rem 0.75rem;
+}
 
-
-
+.card-share{
+    display: inline-block;
+    font-size: 3rem;
+    position: relative;
+    top:-28rem;
+    left: 8rem;
+    margin-right:1rem;
+    padding:0  0.75rem;
+    border-radius: 1rem;
+    z-index: -1;
+}
+.card-share i{
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    padding: 0.5rem;
+}
+.card-product:hover .card-share {
+    z-index: 0;
+    transition: all 0.45s ease;
+}
+.card-share i:hover{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    transition: all 0.45s ease;
+}
 
 
 
