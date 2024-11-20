@@ -77,10 +77,11 @@ html {
     box-sizing: content-box;
 }
 nav{
-    height: 6.5vh;
+    height: 6.7vh;
     display: flex;
     justify-content:space-around;
     align-items: center;
+    border-bottom: 0.2rem solid var(--background-color2);
 }
 .bx-menu{  
     font-size: 3rem;
@@ -116,7 +117,7 @@ main{
     display: grid;
     grid-template-columns: 70% 30%;
     gap:1rem;
-    background-color: #353535;
+    background-color: var(--background-color);
     outline: none;
 }
 .cards-conteiner{
@@ -166,7 +167,7 @@ main{
     margin-right:1rem;
     padding:0  0.75rem;
     border-radius: 1rem;
-    z-index: -1;
+    z-index: -2;
 }
 .card-share i{
     border-radius: 100%;
@@ -225,7 +226,7 @@ main{
 footer{
     background-color:var(--background-color2);
     border-top:0.25rem var(--dark-color) solid;
-    height: fit-content;
+    /* height: fit-content; */
 }
 .footer-div{
     display: flex;
@@ -234,10 +235,10 @@ footer{
     height: 20rem;
     margin-top: 2rem;
     /* margin-bottom: 4rem; */
-    padding: 0.75rem 1rem;
+    padding: 0 1rem;
 }
 .pyment-method{
-    width: 4rem;
+    width: 3rem;
     margin: 0 1rem;
     align-items: center;  
 }
@@ -257,16 +258,16 @@ footer{
 .maker{
     font-size: 1.5rem;
     font-family: "Audiowide","Impact";
-    margin: 1.2rem;
+    margin-bottom: 2rem;
     padding: 0.75rem;
 }
 .social{
     font-size: 2.5rem;
-    margin: 1.5rem;
 }
 /*--------------------------------------*/
 .footer-payment{
     display: flex;
+    flex-direction: row-reverse;
     align-items: end;
     justify-content: space-around;
     text-align: center;
