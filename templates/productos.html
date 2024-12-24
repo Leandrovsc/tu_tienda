@@ -29,14 +29,13 @@
                 <ul class="menu">
                     <li><a class="menu-nav-list" href="../index.html" rel="noopener noreferrer">Home</a></li>
                     <li><a class="menu-nav-list" href="./templates/locales.html" rel="noopener noreferrer">Locales</a></li>
-                    <li><a class="menu-nav-list" href="./templates/productos.html" rel="noopener noreferrer">Carrito</a></li>
                 </ul>
             </nav> 
         </section>
     </header>
     <!----------------MAIN-SECTION-------------------------->
     <main>
-        <div class="cards-conteiner">
+        <div id='cards-products' class="cards-conteiner">
             <!-- -------------------pruducto-1-------------------------------- -->
             <div class="card-product">
                 <div class="img-conteiner">
@@ -55,13 +54,13 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="basket">
-                            <i class="fa-solid fa-basket-shopping"></i>
+                            <i id-basket="1" class="fa-solid fa-basket-shopping"></i>
                         </div>
                     </div>
                 </div>
                 <div class="product-info">
                     <h3>Remera</h3>
-                    <P class="product-price">$15600</P>
+                    <span>$</span><P class="product-price">15600</P>
                 </div>
             </div>
             <!-- -------------------pruducto-2-------------------------------- -->
@@ -82,13 +81,13 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="basket">
-                            <i class="fa-solid fa-basket-shopping"></i>
+                            <i id-basket="2" class="fa-solid fa-basket-shopping"></i>
                         </div>
                     </div>
                 </div>
                 <div class="product-info">
                     <h3>zapatillas</h3>
-                    <P class="product-price">$140.600</P>
+                    <span>$</span><P class="product-price">15600</P>
                 </div>
             </div>    
             <!-- -------------------pruducto-3-------------------------------- -->
@@ -109,13 +108,13 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="basket">
-                            <i class="fa-solid fa-basket-shopping"></i>
+                            <i id-basket="3" class="fa-solid fa-basket-shopping"></i>
                         </div>
                     </div>
                 </div>
                 <div class="product-info">
                     <h3>Campera</h3>
-                    <P class="product-price">$80000</P>
+                    <span>$</span><P class="product-price">15600</P>
                 </div>
             </div>
             <!-- -------------------pruducto-4-------------------------------- -->
@@ -136,13 +135,13 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="basket">
-                            <i class="fa-solid fa-basket-shopping"></i>
+                            <i id-basket="4" class="fa-solid fa-basket-shopping"></i>
                         </div>
                     </div>
                 </div>
                 <div class="product-info">
                     <h3>Joggin</h3>
-                    <P class="product-price">$25000</P>
+                    <span>$</span><P class="product-price">15600</P>
                 </div>
             </div>
             <!-- -------------------pruducto-5-------------------------------- -->
@@ -163,13 +162,13 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="basket">
-                            <i class="fa-solid fa-basket-shopping"></i>
+                            <i id-basket="5" class="fa-solid fa-basket-shopping"></i>
                         </div>
                     </div>
                 </div>
                 <div class="product-info">
                     <h3>Remera</h3>
-                    <P class="product-price">$15600</P>
+                    <span>$</span><P class="product-price">15600</P>
                 </div>
             </div>
             <!-- -------------------pruducto-6-------------------------------- -->
@@ -190,13 +189,13 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="basket">
-                            <i class="fa-solid fa-basket-shopping"></i>
+                            <i id-basket="6" class="fa-solid fa-basket-shopping"></i>
                         </div>
                     </div>
                 </div>
                 <div class="product-info">
                     <h3>Medias</h3>
-                    <P class="product-price">$13600</P>
+                    <span>$</span><P class="product-price">15600</P>
                 </div>
             </div>    
             <!-- -------------------pruducto-7-------------------------------- -->
@@ -217,13 +216,13 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="basket">
-                            <i class="fa-solid fa-basket-shopping"></i>
+                            <i id-basket="7" class="fa-solid fa-basket-shopping"></i>
                         </div>
                     </div>
                 </div>
                 <div class="product-info">
                     <h3>Remera-people</h3>
-                    <P class="product-price">$17600</P>
+                    <span>$</span><P class="product-price">15600</P>
                 </div>
             </div>
             <!-- -------------------pruducto-8-------------------------------- -->
@@ -244,16 +243,16 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="basket">
-                            <i class="fa-solid fa-basket-shopping"></i>
+                            <i id-basket="8" class="fa-solid fa-basket-shopping"></i>
                         </div>
                     </div>
                 </div>
                 <div class="product-info">
                     <h3>Camisas</h3>
-                    <P class="product-price">$35000</P>
+                    <span>$</span><P class="product-price">15600</P>
                 </div>
             </div>
-            <!-- -------------------pruducto-7-------------------------------- --> 
+            <!-- -------------------pruducto-9-------------------------------- --> 
             <div class="card-product">
                 <div class="img-conteiner">
                     <img class="picture" src="../static/img/sandalias-mujer.jpg" alt="sandalias mujer">
@@ -271,25 +270,38 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="basket">
-                            <i class="fa-solid fa-basket-shopping"></i>
+                            <i id-basket="9" class="fa-solid fa-basket-shopping"></i>
                         </div>
                     </div>
                 </div>
                 <div class="product-info">
                     <h3>Sandalias</h3>
-                    <P class="product-price">$58100</P>
+                    <span>$</span><P class="product-price">15600</P>
                 </div>
             </div>
         </div>
+        <!-- ------------------------------ -->
         <section>
-            <div class="shopping-basket">
-                <h2>Tu Carrito</h2>
-                <h3>Items (0)</h3>
-                <div class="items">item 1</div>
-                <div class="items">item 2</div>
-                <div class="items">item 2</div>
-                <div class="items">item 2</div>
-                <div class="items">item 2</div>
+            <div id='shopping-basket' class="shopping-basket">
+                <div>
+                    <h2>Tu Carrito</h2>
+                    <h3>Items</h3>
+                    <!-- <span id="#items-total">0</span> -->
+                </div>
+                <table id="lista-carrito" class="table">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <div class="btn-basket"><button id="clear-basket" >vaciar carrito</button></div>
             </div>
         </section>    
     </main>
@@ -339,5 +351,6 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/6937d822d9.js" crossorigin="anonymous"></script>
+    <script src="../static/js/productos.js"></script>
 </body>
 </html>
