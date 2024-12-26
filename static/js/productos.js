@@ -23,7 +23,11 @@ function cargarEventos(){
         productoCarrito=[]//resetea el carrito
         limpiarHTML()//elimina el html del carrito
     })
-    
+    //muestra los cursos que estan en el local storage--------------
+    document.addEventListener('DOMContentLoaded',()=>{
+        productoCarrito=JSON.parse(localStorage.getItem('carrito'))||[]
+        carritoHTML()
+    })
 }
 //2dafuncion-----
 function agregarProducto(e){
@@ -84,6 +88,8 @@ function carritoHTML(){
         `
         contenedorCarrito.appendChild(row)
     })
+     //agregar un local storage-----------------------------------------
+    sincronizarLocalStorage()
 }
 
 function limpiarHTML(){
@@ -102,27 +108,7 @@ function eliminarProducto(e){
     }
 }
 
+function sincronizarLocalStorage(){
+    localStorage.setItem('carrito',JSON.stringify(productoCarrito))
+}
 
-// // Función para verificar el carrito y ocultar/mostrar botones
-// function actualizarBotonesCarrito() {
-//     // Selecciona el carrito y los botones
-//     const carrito = document.querySelector('#lista-carrito tbody');
-//     const botones = document.querySelectorAll('.btn-basket button');
-
-//     // Verifica si el carrito está vacío
-//     if (carrito.children.length === 0) {
-//         // Oculta los botones si el carrito está vacío
-//         botones.forEach(boton => {
-//             boton.style.display = 'none';
-//         });
-//     } else {
-//         // Muestra los botones si hay artículos en el carrito
-//         botones.forEach(boton => {
-//             boton.style.display = 'block';
-//         });
-//     }
-// }
-
-// // Llamar a la función al cargar la página y cuando se actualice el carrito
-// document.addEventListener('DOMContentLoaded', actualizarBotonesCarrito);
-// document.querySelector('#lista-carrito').addEventListener('change', actualizarBotonesCarrito);
