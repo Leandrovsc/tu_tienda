@@ -101,3 +101,28 @@ function eliminarProducto(e){
         carritoHTML()//itera sobre el carrito y muestra el html
     }
 }
+
+
+// // Función para verificar el carrito y ocultar/mostrar botones
+// function actualizarBotonesCarrito() {
+//     // Selecciona el carrito y los botones
+//     const carrito = document.querySelector('#lista-carrito tbody');
+//     const botones = document.querySelectorAll('.btn-basket button');
+
+//     // Verifica si el carrito está vacío
+//     if (carrito.children.length === 0) {
+//         // Oculta los botones si el carrito está vacío
+//         botones.forEach(boton => {
+//             boton.style.display = 'none';
+//         });
+//     } else {
+//         // Muestra los botones si hay artículos en el carrito
+//         botones.forEach(boton => {
+//             boton.style.display = 'block';
+//         });
+//     }
+// }
+
+// // Llamar a la función al cargar la página y cuando se actualice el carrito
+// document.addEventListener('DOMContentLoaded', actualizarBotonesCarrito);
+// document.querySelector('#lista-carrito').addEventListener('change', actualizarBotonesCarrito);
