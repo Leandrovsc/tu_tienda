@@ -76,11 +76,11 @@ function carritoHTML(){
 
         const row=document.createElement('tr')
         row.innerHTML=`
-        <td>   <img src='${imagen}' width=75></td>
-        <td>${nombre}</td>
-        <td>$${precio}</td>
-        <td>${cantidad}</td>
-        <td> <a href="#" class="borrar-curso" data-id="${id}">X</a> </td>
+        <td class="data"><img src='${imagen}' width=100></td>
+        <td class="data">${nombre}</td>
+        <td class="data">$${precio}</td>
+        <td class="data">${cantidad}</td>
+        <td class="data"><a href="#" class="borrar-producto" data-id="${id}">X</a></td>
         `
         contenedorCarrito.appendChild(row)
     })
@@ -92,7 +92,7 @@ function limpiarHTML(){
 
 function eliminarProducto(e){
     //console.log(e.target.classList.value)
-    if (e.target.classList.value==='borrar-curso'){
+    if (e.target.classList.value==='borrar-producto'){
         // console.log(e.target.getAttribute('data-id'))
         const productoid=e.target.getAttribute('data-id')
         //elimina del arreglo articuloCarrito por el data-id
