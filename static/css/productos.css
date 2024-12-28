@@ -113,6 +113,27 @@ nav .bx-menu{
 /*----------------------MAIN-SECTION-----------------------------*/
 
 /****************************ANEXO VENTANA EMERGENTE******************************************/
+#modal{
+    width: 30rem;
+    height: 20rem;  
+    position: unset;
+    margin: auto auto;
+    border: 0.12rem solid var(--background-color2);
+    background-color: #bac5d3;
+    border-radius: 1rem;
+    align-content: center;
+    align-items: center;
+}
+
+#modal::backdrop{
+    background-color: #252525a1;
+}
+
+div.aceptar-rechazar{
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem;
+}
 
 /**************************************************************************************/
 main{
