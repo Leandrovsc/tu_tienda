@@ -4,13 +4,17 @@ const contenedorCarrito=document.querySelector('#lista-carrito tbody')
 const vaciarCarritoBtn=document.querySelector('#clear-basket')
 const listaProductos=document.querySelector('#cards-products')
 
+const comprarCarrito=document.querySelector('#buy-basket')
+const contenedorAbrirModal=document.querySelector('#modal')
+const contenedorCerrarModal=document.querySelector('#close-modal')
+const contenedorConfirmarCompra=document.querySelector('#buy-accepted')
+
 //agrego el carrito de compras--------------------------------
 let productoCarrito=[]
-
 cargarEventos()
 
-//funciones--------------------------------------------------
 
+//funciones--------------------------------------------------
 //1ra funcion----
 function cargarEventos(){
     //agrega productos al carrito----------------------------
@@ -27,6 +31,24 @@ function cargarEventos(){
     document.addEventListener('DOMContentLoaded',()=>{
         productoCarrito=JSON.parse(localStorage.getItem('carrito'))||[]
         carritoHTML()
+    })
+    //hace el calculo del total
+    comprarCarrito.addEventListener('click',()=>{
+        aletraCarritoVacio()
+        if (aletraCarritoVacio()===true){
+            totalCarritoHTML()
+        }
+    })
+    //cierro la ventana modal de la finalizacion de la compra
+    contenedorCerrarModal.addEventListener('click',()=>{
+        contenedorAbrirModal.close()
+    })
+    //finalizo la compra
+    contenedorConfirmarCompra.addEventListener('click',()=>{
+        alert("Felicidades Compra Realizada con Exito!!")
+        contenedorAbrirModal.close()
+        limpiarHTML()//limpia el carrito
+        productoCarrito=[]//borra lo que haya en el memoria
     })
 }
 //2dafuncion-----
@@ -103,7 +125,7 @@ function eliminarProducto(e){
         const productoid=e.target.getAttribute('data-id')
         //elimina del arreglo articuloCarrito por el data-id
         productoCarrito=productoCarrito.filter(producto=>producto.id!==productoid)
-        console.log(productoCarrito)
+        // console.log(productoCarrito)
         carritoHTML()//itera sobre el carrito y muestra el html
     }
 }
@@ -112,3 +134,24 @@ function sincronizarLocalStorage(){
     localStorage.setItem('carrito',JSON.stringify(productoCarrito))
 }
 
+function aletraCarritoVacio(){
+
+    if(productoCarrito != false){
+        return true
+    }else{
+        alert('No tienes Productos en tu carrito!!')
+    }
+}
+
+function totalCarritoHTML(){
+    // console.log("el total de la compra es ....")
+    let total=0
+    productoCarrito.forEach((producto)=>{
+        const {imagen,nombre,precio,cantidad,id}=producto
+        total=(precio)*(cantidad)+total
+    })
+    const iva=1.21
+    let total_iva=iva*total
+    document.querySelector(`#total_iva`).textContent=total_iva
+    contenedorAbrirModal.showModal()
+}
